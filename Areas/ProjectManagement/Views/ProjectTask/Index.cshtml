@@ -1,0 +1,44 @@
+@model IEnumerable<ProjectTask>
+@{
+    ViewBag.Title = "Project Tasks";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<a asp-action="Create" asp-route-projectId="@ViewBag.ProjectId" class="btn btn-primary">Create New Task</a>
+
+@if (Model.Any())
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Task ID</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        @foreach (var task in Model)
+        {
+            <tr>
+                <td>@task.ProjectTaskId</td>
+                <td>@task.Title</td>
+                <td>@task.Description</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@task.ProjectTaskId" class="btn btn-info">Details</a>
+                    <a asp-action="Edit" asp-route-id="@task.ProjectTaskId" class="btn btn-warning">Edit</a>
+                    <a asp-area="ProjectManagement" asp-controller="ProjectTask" asp-action="Delete" asp-route-id="@task.ProjectTaskId" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No tasks available for this project.</p>
+}
+
+<a asp-controller="Project" asp-action="Index" class="btn btn-secondary">Back to Projects</a>

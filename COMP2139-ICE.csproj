@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>COMP2139_ICE</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Project\Create\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Project\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Project\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Project\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Project\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Project\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ProjectTask\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ProjectTask\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ProjectTask\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ProjectTask\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ProjectTask\Index.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MailKit" Version="4.11.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.1" />
+      <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="9.0.3" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.1" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.1">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="9.0.3" />
+      <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.3" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.0" />
+      <PackageReference Include="SendGrid" Version="9.29.3" />
+      <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+      <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
+      <PackageReference Include="Serilog.Sinks.File" Version="6.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Include="Areas\ProjectManagement\Views\Project\Create.cshtml" />
+      <AdditionalFiles Include="Areas\ProjectManagement\Views\Project\Delete.cshtml" />
+      <AdditionalFiles Include="Areas\ProjectManagement\Views\Project\Details.cshtml" />
+      <AdditionalFiles Include="Areas\ProjectManagement\Views\Project\Edit.cshtml" />
+      <AdditionalFiles Include="Areas\ProjectManagement\Views\Project\Index.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Logs\" />
+    </ItemGroup>
+
+</Project>
