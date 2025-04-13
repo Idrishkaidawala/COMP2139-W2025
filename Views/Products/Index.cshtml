@@ -1,0 +1,116 @@
+@model IEnumerable<SmartInventoryManagement.Models.Product>
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+<div class="container-fluid">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>Products</h1>
+        @if (User.IsInRole("Admin"))
+        {
+            <a asp-action="Create" class="btn btn-primary">
+                <i class="fas fa-plus"></i> Add New Product
+            </a>
+        }
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <input type="text" id="searchInput" class="form-control" placeholder="Search products...">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="searchButton">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="productsList">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                                <th>Stock</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.Name</td>
+                                    <td>@item.Category?.Name</td>
+                                    <td>@item.Price.ToString("C")</td>
+                                    <td>@item.QuantityInStock</td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">
+                                                <i class="fas fa-info-circle"></i>
+                                            </a>
+                                            @if (User.IsInRole("Admin"))
+                                            {
+                                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-sm">
+                                                    <i class="fas fa-edit"></i>
+                                                </a>
+                                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">
+                                                    <i class="fas fa-trash"></i>
+                                                </a>
+                                            }
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            let searchTimeout;
+            const searchInput = $('#searchInput');
+            const productsList = $('#productsList');
+            const loadingSpinner = $('<div class="text-center"><div class="spinner-border text-primary" role="status"><span class="sr-only">Loading...</span></div></div>');
+
+            searchInput.on('input', function () {
+                clearTimeout(searchTimeout);
+                searchTimeout = setTimeout(performSearch, 300);
+            });
+
+            function performSearch() {
+                const searchTerm = searchInput.val();
+                productsList.html(loadingSpinner);
+
+                $.get('/Products/Search', { searchTerm: searchTerm })
+                    .done(function (result) {
+                        productsList.html(result);
+                    })
+                    .fail(function (error) {
+                        productsList.html('<div class="alert alert-danger">Error loading products. Please try again.</div>');
+                        console.error('Search failed:', error);
+                    });
+            }
+
+            // Monitor stock levels
+            $('.product-row').each(function () {
+                var quantityInStock = parseInt($(this).data('quantity'));
+                var threshold = parseInt($(this).data('threshold'));
+                if (quantityInStock <= threshold) {
+                    $(this).addClass('table-warning');
+                }
+            });
+        });
+    </script>
+}

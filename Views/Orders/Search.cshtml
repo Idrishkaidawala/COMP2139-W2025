@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Order>
+
+@{
+    ViewBag.Title = "Search Orders";
+    Layout = "_Layout";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<form asp-action="Search" method="get">
+    <div class="form-group">
+        <label for="searchString">Search by Guest Name</label>
+        <input type="text" id="searchString" name="searchString" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Order ID</th>
+        <th>Guest Name</th>
+        <th>Order Date</th>
+        <th>Details</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var order in Model)
+    {
+        <tr>
+            <td>@order.Id</td>
+            <td>@order.GuestName</td>
+            <td>@order.OrderDate.ToShortDateString()</td>
+            <td>
+                @Html.ActionLink("Details", "Details", new { id = order.Id })
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

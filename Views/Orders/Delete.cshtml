@@ -1,0 +1,27 @@
+﻿@model Order
+
+@{
+    ViewBag.Title = "Delete Order";
+    Layout = "_Layout";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div>
+    <h3>Are you sure you want to delete the order?</h3>
+    <dl class="dl-horizontal">
+        <dt>Order ID</dt>
+        <dd>@Model.Id</dd>
+        <dt>Guest Name</dt>
+        <dd>@Model.GuestName</dd>
+        <dt>Order Date</dt>
+        <dd>@Model.OrderDate.ToShortDateString()</dd>
+    </dl>
+
+    @using (Html.BeginForm("Delete", "Orders", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a href="@Url.Action("Index")" class="btn btn-default">Cancel</a>
+    }
+</div>

@@ -1,0 +1,73 @@
+﻿@model Cart
+
+@{
+    ViewData["Title"] = "Shopping Cart";
+}
+
+<div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>Shopping Cart</h1>
+        <a asp-controller="Products" asp-action="Index" class="btn btn-primary">
+            <i class="bi bi-cart-plus"></i> Continue Shopping
+        </a>
+    </div>
+
+    @if (Model.Items.Any())
+    {
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                                <th>Total</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Items)
+                            {
+                                <tr>
+                                    <td>@(item.Product?.Name ?? "Unknown Product")</td>
+                                    <td>@item.Quantity</td>
+                                    <td>@(item.Product?.Price.ToString("C2") ?? "N/A")</td>
+                                    <td>@((item.Product?.Price * item.Quantity)?.ToString("C2") ?? "N/A")</td>
+                                    <td>
+                                        <a asp-action="RemoveFromCart" asp-route-productId="@item.ProductId" 
+                                           class="btn btn-sm btn-danger">
+                                            <i class="bi bi-trash"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center mt-4">
+                    <h4 class="mb-0">Total: @Model.TotalCost.ToString("C2")</h4>
+                    <div>
+                        <a asp-action="Index" asp-controller="Products" class="btn btn-secondary me-2">
+                            Continue Shopping
+                        </a>
+                        <a asp-action="Checkout" class="btn btn-success">
+                            <i class="bi bi-credit-card"></i> Proceed to Checkout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info">
+            <p class="mb-0">Your shopping cart is empty.</p>
+        </div>
+        <a asp-controller="Products" asp-action="Index" class="btn btn-primary">
+            <i class="bi bi-cart-plus"></i> Start Shopping
+        </a>
+    }
+</div>

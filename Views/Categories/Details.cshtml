@@ -1,0 +1,20 @@
+﻿@model SmartInventoryManagement.Models.Category
+
+@{
+    ViewBag.Title = "Category Details";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div>
+    <h4>Name: @Model.Name</h4>
+    <h4>Products in this category:</h4>
+    <ul>
+        @foreach (var product in Model.Products)
+        {
+            <li>@product.Name</li>
+        }
+    </ul>
+</div>
+
+<a href="@Url.Action("Index", "Categories")" class="btn btn-primary">Back to List</a>

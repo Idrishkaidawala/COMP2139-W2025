@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0bf36bb4-ee17-49fc-9cd0-9ed8dca95c75" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE 1/COMP2139-ICE 1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE 1/COMP2139-ICE 1/Controllers/ProjectController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE 1/COMP2139-ICE 1/Models/Project.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE 1/COMP2139-ICE 1/Views/Home/About.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE 1/COMP2139-ICE 1/Views/Project/Create.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE 1/COMP2139-ICE 1/Views/Project/Details.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE 1/COMP2139-ICE 1/Views/Project/Index.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/.idea/.idea.COMP2139-ICE/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/.idea/.idea.COMP2139-ICE/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/.idea/.idea.COMP2139-ICE/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/Areas/Controllers/ProjectController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/Areas/Controllers/ProjectTaskCOntroller.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/Areas/Models/Project.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/Areas/Models/ProjectTask.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/Areas/ProjectManagement/Components/ProjectSummary/ProjectSummaryViewComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/COMP2139-ICE.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/COMP2139-ICE.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/Controllers/HomeController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/Data/ApplicationDbContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/Models/ErrorViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/Views/Home/Index.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/Views/Shared/Error.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/Views/Shared/_Layout.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/Views/Shared/_Layout.cshtml.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/Views/Shared/_ValidationScriptsPartial.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/Views/_ViewImports.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/Views/_ViewStart.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/Views/projects/Create.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/Views/projects/Delete.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/Views/projects/Details.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/Views/projects/Edit.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/Views/projects/Index.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/bin/Debug/net9.0/COMP2139-ICE.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/bin/Debug/net9.0/COMP2139-ICE.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/bin/Debug/net9.0/COMP2139-ICE.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/bin/Debug/net9.0/COMP2139-ICE.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/bin/Debug/net9.0/COMP2139-ICE.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/bin/Debug/net9.0/COMP2139-ICE.staticwebassets.endpoints.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/bin/Debug/net9.0/COMP2139-ICE.staticwebassets.runtime.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/bin/Debug/net9.0/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/bin/Debug/net9.0/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/COMP2139-ICE.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/COMP2139-ICE.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/COMP2139-ICE.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/COMP2139-ICE.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/COMP2139-ICE.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/COMP2139-ICE.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/COMP2139-ICE.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/COMP2139-ICE.MvcApplicationPartsAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/COMP2139-ICE.RazorAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/COMP2139-ICE.RazorAssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/COMP2139-ICE.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/COMP2139-ICE.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/COMP2139-ICE.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/COMP2139-ICE.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/COMP2139-ICE.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/COMP2139-ICE.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/apphost.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/09dpb44ywr-zub09dkrxp.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/0hyxda7cm4-t1cqhe9u97.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/0kug3pmmhm-87fc7y1x7t.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/1r3hut1l8p-83jwlth58m.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/22vgns45yo-fvhpjtyr6v.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/2lpzs2ad9x-b9sayid5wm.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/2w90hmdx9n-ltid2c489k.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/32zr4g8dqz-v0zj4ognzu.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/3j1yhgkdcc-gk0pw8i4co.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/3rqjz4op74-tmc1g35s3z.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/56jk4wsgpo-xvp3kq03qx.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/5p6lcij9j7-wa32a5xtvi.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/73x8g78sa2-356vix0kms.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/7qt23ob52j-48y08845bh.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/80uez7g0n7-d6nrnj6jjx.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/8lvb4mncno-jjsuc0puko.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/92vkfsrlcr-sejl45xvog.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/93znvnnl29-mlv21k5csn.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/a5xmkal4c4-fsbi9cje9m.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/bequ149bhs-qesaa3a1fm.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/ceubfmu3uh-jd9uben2k1.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/cp2se3kqe1-ft3s53vfgj.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/e4pln3qyb0-c63t5i9ira.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/fav1uw0gjs-ttgo8qnofa.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/g1cey9bh9o-gye83jo8yx.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/gc4yzz1gwb-cosvhxvwiu.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/ge7kn6xlc5-c2oey78nd0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/gl0op09m2z-22vffe00uq.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/hf2isexqee-kbrnm935zg.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/hk73pilhdw-6pdc2jztkx.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/hl48kxk962-0j3bgjxly4.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/hyrvowkxjp-j5mq2jizvt.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/hyysavb756-61n19gt1b8.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/igvie8t8u3-hd3gran6i8.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/ihv7rzhifv-wl58j5mj3v.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/ir9c5ixbhk-ee0r1s7dh0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/itp4ptmyzi-worgj0nhwm.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/j4p9fx18zj-4094rpi4f9.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/j8xqn671bg-mrlpezrjn3.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/jphroty4iu-keugtjm085.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/k2lxjju28g-ausgxo2sd3.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/ky82es9uz7-03hjc8e09r.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/l7z61drxrc-rxsg74s51o.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/lcybr35y7c-c2jlpeoesf.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/lnrvpwhi44-d4r6k3f320.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/mtj3tgikg3-xtxxf3hu2r.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/ofeqqyguqu-wa32a5xtvi.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/pgbdq47679-u9q1upor1n.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/pra7yla4m1-h1s4sie4z3.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/qyz342c9l3-r4e9w2rdcm.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/rwa10etcn2-pj5nd1wqec.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/s9zbwhi3rp-aexeepp0ev.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/slmauvauz5-iovd86k7lj.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/sqp37v8x9s-x0q3zqp4vz.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/swt0i5m34f-4d85u1mtcx.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/tiaksq0ict-q9ht133ko3.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/tm4gyusqon-ynyaa8k90p.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/tnxzaxym5b-nvvlpmu67g.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/ujrjrffoxz-y7v9cxd14o.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/vcpjie42qr-43atpzeawx.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/vmfqu0kvuo-8vyfqsqgz1.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/x30behsz3b-m9qm4tazc0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/y7sx55klya-hrwsygsryq.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/compressed/z6pagz0ttl-9vr69e8ynj.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/ref/COMP2139-ICE.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/refint/COMP2139-ICE.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/scopedcss/bundle/COMP2139-ICE.styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/scopedcss/projectbundle/COMP2139-ICE.bundle.scp.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/staticwebassets.build.endpoints.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/staticwebassets.build.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/staticwebassets.development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/staticwebassets.pack.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/staticwebassets/msbuild.COMP2139-ICE.Microsoft.AspNetCore.StaticWebAssetEndpoints.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/staticwebassets/msbuild.COMP2139-ICE.Microsoft.AspNetCore.StaticWebAssets.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/staticwebassets/msbuild.build.COMP2139-ICE.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.COMP2139-ICE.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.COMP2139-ICE.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/obj/rider.project.restore.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/css/site.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/js/site.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/jquery-validation/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/jquery-validation/dist/additional-methods.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/jquery-validation/dist/jquery.validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/jquery/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/jquery/dist/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/jquery/dist/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/jquery/dist/jquery.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/jquery/dist/jquery.slim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/jquery/dist/jquery.slim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../COMP2139-ICE/wwwroot/lib/jquery/dist/jquery.slim.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICE/.idea/.idea.ICE/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ICE/.idea/.idea.ICE/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICE/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ICE/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICE/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ICE/Data/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICE/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ICE/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICE/Models/ErrorViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ICE/Models/ErrorViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICE/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ICE/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICE/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ICE/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICE/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../ICE/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICE/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../ICE/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICE/Views/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../ICE/Views/_ViewImports.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICE/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ICE/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICE/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ICE/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICE/bin/Debug/net9.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ICE/bin/Debug/net9.0/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICE/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ICE/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICE/obj/Debug/net9.0/staticwebassets.build.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ICE/obj/Debug/net9.0/staticwebassets.build.endpoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICE/obj/Debug/net9.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ICE/obj/Debug/net9.0/staticwebassets.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICE/obj/Debug/net9.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ICE/obj/Debug/net9.0/staticwebassets.development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICE/obj/Debug/net9.0/staticwebassets.pack.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ICE/obj/Debug/net9.0/staticwebassets.pack.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICE/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ICE/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICE/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ICE/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICE/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ICE/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICE/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/../ICE/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICE/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../ICE/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICE/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ICE/wwwroot/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SmartInventoryManagement 1/.idea/.idea.SmartInventoryManagement 1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SmartInventoryManagement 1/.idea/.idea.SmartInventoryManagement 1/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SmartInventoryManagement 1/.idea/.idea.SmartInventoryManagement 1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SmartInventoryManagement 1/SmartInventoryManagement 1/Data/ApplicationDbContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SmartInventoryManagement 1/SmartInventoryManagement 1/Models/Category.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SmartInventoryManagement 1/SmartInventoryManagement 1/Models/Order.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SmartInventoryManagement 1/SmartInventoryManagement 1/Models/Product.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SmartInventoryManagement.dir/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SmartInventoryManagement.dir/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SmartInventoryManagement.dir/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SmartInventoryManagement.dir/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/CartController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CartController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/OrdersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/OrdersController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/ProductsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/ProductsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Helpers/SessionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Helpers/SessionExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Category.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Order.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Order.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Orderitem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Orderitem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Product.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartInventoryManagement.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SmartInventoryManagement.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Cart/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Cart/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Orders/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Orders/Details.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Products/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Products/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Humanizer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.AspNetCore.Razor.Language.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.Bcl.AsyncInterfaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.Build.Framework.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.Build.Locator.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.Build.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.Features.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.CodeAnalysis.Elfie.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.CodeAnalysis.Features.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.CodeAnalysis.Razor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.CodeAnalysis.Scripting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.CodeAnalysis.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.DiaSymReader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.DotNet.Scaffolding.Shared.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Design.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Relational.Design.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Relational.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.Extensions.Caching.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.Extensions.Caching.Memory.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.Extensions.Configuration.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.Extensions.DependencyModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.Extensions.Logging.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.Extensions.Logging.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.Extensions.Options.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.Extensions.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.NET.StringTools.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.VisualStudio.Web.CodeGeneration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Mono.TextTemplating.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/Npgsql.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/NuGet.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/NuGet.Configuration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/NuGet.DependencyResolver.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/NuGet.Frameworks.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/NuGet.LibraryModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/NuGet.Packaging.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/NuGet.ProjectModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/NuGet.Protocol.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/NuGet.Versioning.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/SmartInventoryManagement.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/SmartInventoryManagement.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/SmartInventoryManagement.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/SmartInventoryManagement.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/SmartInventoryManagement.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/SmartInventoryManagement.staticwebassets.endpoints.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/SmartInventoryManagement.staticwebassets.runtime.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/System.CodeDom.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/System.Composition.AttributedModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/System.Composition.Convention.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/System.Composition.Hosting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/System.Composition.Runtime.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/System.Composition.TypedParts.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/System.Configuration.ConfigurationManager.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/System.Reflection.MetadataLoadContext.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/System.Text.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/af/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ar/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/az/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/bg/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/bn-BD/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/cs/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/da/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/de/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/dotnet-aspnet-codegenerator-design.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/el/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/es/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/fa/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/fi-FI/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/fr-BE/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/fr/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/he/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/hr/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/hu/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/hy/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/id/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/is/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/it/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ja/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ko-KR/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ku/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/lv/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ms-MY/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/mt/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/nb-NO/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/nb/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/nl/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/pl/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/pt/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ro/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ru/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/sk/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/sl/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/sr-Latn/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/sr/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/sv/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/th-TH/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/tr/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/uk/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/uz-Cyrl-UZ/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/uz-Latn-UZ/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/vi/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/zh-CN/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/zh-Hans/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/zh-Hant/Humanizer.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/SmartInv.703F6D2F.Up2Date" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/SmartInventoryManagement.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/SmartInventoryManagement.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/SmartInventoryManagement.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/SmartInventoryManagement.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/SmartInventoryManagement.MvcApplicationPartsAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/SmartInventoryManagement.RazorAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/SmartInventoryManagement.RazorAssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/SmartInventoryManagement.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/SmartInventoryManagement.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/SmartInventoryManagement.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/SmartInventoryManagement.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/SmartInventoryManagement.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/SmartInventoryManagement.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/SmartInventoryManagement.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/SmartInventoryManagement.sourcelink.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/apphost.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/0xzi0ayzze-wl58j5mj3v.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/0zz5us8mqe-83jwlth58m.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/1738mamq44-mlv21k5csn.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/1kegjftwce-d4r6k3f320.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/33un76m9l6-87fc7y1x7t.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/39qtqm6b9q-q9ht133ko3.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/4a25viptif-hrwsygsryq.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/555t01um55-9vr69e8ynj.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/5h5dfhirk2-x0q3zqp4vz.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/5iet65f1aj-kbrnm935zg.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/5iuhobcdf8-mrlpezrjn3.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/80nsoc2by7-h1s4sie4z3.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/84cp9v3b9o-r4e9w2rdcm.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/87imy2xu7w-ft3s53vfgj.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/9gs1to1q6f-6pdc2jztkx.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/9q4q3rv19y-22vffe00uq.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/9s7irbg3i9-4d85u1mtcx.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/a6w2eczzwf-worgj0nhwm.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/aesbb4a03x-v0zj4ognzu.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/ag1ehhnl1y-t1cqhe9u97.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/anou2wpxpu-m9qm4tazc0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/at6y0mypqn-jjsuc0puko.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/du4mc2rqao-8vyfqsqgz1.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/dye7fxcj6e-ee0r1s7dh0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/efb6aywg0i-rxsg74s51o.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/ehb0i2y5bc-cosvhxvwiu.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/eqjmbik93t-n4j5sx9yxq.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/ewbgof1cqs-c2jlpeoesf.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/f6spkhwg1z-n4j5sx9yxq.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/fuc1rn49dh-d6nrnj6jjx.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/h6e7zug5fo-0j3bgjxly4.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/h9qs1o0xa8-u9q1upor1n.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/hhsfrqb16j-4094rpi4f9.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/jqdhvfwbpx-aexeepp0ev.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/jym4beds8r-ynyaa8k90p.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/k879q07rdd-qesaa3a1fm.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/km0wk2sfk2-jd9uben2k1.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/l01byhlvy1-ausgxo2sd3.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/lsubc19h13-j5mq2jizvt.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/n6e3l27xne-61n19gt1b8.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/nmx9l18u7v-48y08845bh.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/obdzm4sri9-sejl45xvog.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/onufqxbehf-pj5nd1wqec.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/oqtyilhpsm-tmc1g35s3z.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/ow2bv7eerd-iovd86k7lj.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/q49h46d4xq-gk0pw8i4co.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/qemb0y5jfh-y7v9cxd14o.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/qsa2jipwnu-ttgo8qnofa.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/qz8s13w84p-gye83jo8yx.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/scju98ogzc-c63t5i9ira.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/ug7tp3r3c1-9garb9mkd4.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/uj2ua17y91-356vix0kms.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/ull2ao24p4-zub09dkrxp.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/w4tggpjcvf-nvvlpmu67g.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/w6lhls0u3d-c2oey78nd0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/wzmpyf4b8p-43atpzeawx.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/yhw7xaa7xh-fsbi9cje9m.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/ysdss83qkh-fvhpjtyr6v.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/yxiydctyz6-hd3gran6i8.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/z1x87w2u15-ltid2c489k.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/zc14o19qjj-03hjc8e09r.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/zdnypu3q00-xvp3kq03qx.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/zfwqi2fxs9-xtxxf3hu2r.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/compressed/zq99pef6uq-keugtjm085.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/ref/SmartInventoryManagement.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/refint/SmartInventoryManagement.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/scopedcss/bundle/SmartInventoryManagement.styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/scopedcss/projectbundle/SmartInventoryManagement.bundle.scp.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets.build.endpoints.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets.build.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets.development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets.pack.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets/msbuild.SmartInventoryManagement.Microsoft.AspNetCore.StaticWebAssetEndpoints.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets/msbuild.SmartInventoryManagement.Microsoft.AspNetCore.StaticWebAssets.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets/msbuild.build.SmartInventoryManagement.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.SmartInventoryManagement.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.SmartInventoryManagement.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/SmartInventoryManagement.csproj.EntityFrameworkCore.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/SmartInventoryManagement.csproj.codegeneration.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/SmartInventoryManagement.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/SmartInventoryManagement.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/SmartInventoryManagement.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/SmartInventoryManagement.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/SmartInventoryManagement.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/obj/SmartInventoryManagement.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Idrishkaidawala"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Idrishkaidawala/COMP2139-W2025.git",
+    "accountId": "a9fd4133-266c-4fe9-b044-633653348537"
+  }
+}]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Controllers/CategoriesController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controllers/CategoryController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/appsettings.Development.json" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2vdm9mp9QnYLHf6Lbdneb8APwoe" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Executable.Unnamed.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="RunExe" factoryName=".NET Executable" nameIsGenerated="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../SmartInventorySystem/SmartInventorySystem/SmartInventorySystem.csproj" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../SmartInventorySystem/SmartInventorySystem" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build Solution" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0bf36bb4-ee17-49fc-9cd0-9ed8dca95c75" name="Changes" comment="" />
+      <created>1744483177241</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744483177241</updated>
+      <workItem from="1744483179583" duration="704000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

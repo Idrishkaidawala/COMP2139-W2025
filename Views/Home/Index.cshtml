@@ -1,0 +1,161 @@
+﻿@using SmartInventoryManagement.Models
+@using System.Linq
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+@if (!User.Identity?.IsAuthenticated ?? true)
+{
+    <div class="text-center py-5">
+        <h1 class="display-4 mb-4">Welcome to Smart Inventory Management</h1>
+        <p class="lead mb-4">Your comprehensive solution for managing inventory, tracking orders, and streamlining your business operations.</p>
+        
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">Key Features</h5>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="p-3">
+                                    <i class="bi bi-box-seam display-4 text-primary mb-3"></i>
+                                    <h6>Inventory Management</h6>
+                                    <p class="small text-muted">Track stock levels and manage products efficiently</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="p-3">
+                                    <i class="bi bi-cart-check display-4 text-success mb-3"></i>
+                                    <h6>Order Tracking</h6>
+                                    <p class="small text-muted">Monitor orders and manage customer requests</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="p-3">
+                                    <i class="bi bi-graph-up display-4 text-info mb-3"></i>
+                                    <h6>Analytics</h6>
+                                    <p class="small text-muted">Get insights into your business performance</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center gap-3">
+            <a asp-controller="Account" asp-action="Login" class="btn btn-primary btn-lg px-4">Login</a>
+            <a asp-controller="Account" asp-action="Register" class="btn btn-outline-primary btn-lg px-4">Register</a>
+        </div>
+    </div>
+}
+else
+{
+    <div class="container-fluid">
+        <h1 class="h3 mb-4">Dashboard</h1>
+        
+        <div class="row">
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Total Products</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">@ViewBag.TotalProducts</div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="bi bi-box-seam fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-success shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Total Categories</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">@ViewBag.TotalCategories</div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="bi bi-tags fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-warning shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Low Stock Products</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">@ViewBag.LowStockProducts</div>
+                            </div>
+                            <div class="col-auto">
+                                <i class="bi bi-exclamation-triangle fa-2x text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3 d-flex justify-content-between align-items-center">
+                        <h6 class="m-0 font-weight-bold text-primary">Recent Orders</h6>
+                        <a asp-controller="Orders" asp-action="Create" class="btn btn-primary btn-sm">
+                            <i class="bi bi-plus-circle"></i> New Order
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        @if (ViewBag.RecentOrders == null || ((IEnumerable<Order>)ViewBag.RecentOrders).Count() == 0)
+                        {
+                            <div class="alert alert-info">
+                                <p class="mb-0">No recent orders found. <a asp-controller="Orders" asp-action="Create">Create a new order</a> to get started.</p>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Order ID</th>
+                                            <th>Customer</th>
+                                            <th>Date</th>
+                                            <th>Total</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var order in (IEnumerable<Order>)ViewBag.RecentOrders)
+                                        {
+                                            <tr>
+                                                <td>@order.Id</td>
+                                                <td>@order.GuestName</td>
+                                                <td>@order.OrderDate.ToString("MM/dd/yyyy HH:mm")</td>
+                                                <td>@order.TotalPrice.ToString("C")</td>
+                                                <td>
+                                                    <a asp-controller="Orders" asp-action="Details" asp-route-id="@order.Id" class="btn btn-sm btn-info">
+                                                        <i class="bi bi-eye"></i> Details
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

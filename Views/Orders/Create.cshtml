@@ -1,0 +1,159 @@
+﻿@using SmartInventoryManagement.Models
+
+@model SmartInventoryManagement.Models.Order
+
+@{
+    ViewData["Title"] = "Create Order";
+}
+
+<div class="container">
+    <h1>Create Order</h1>
+
+    <div class="card">
+        <div class="card-body">
+            <form id="orderForm" asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group mb-3">
+                            <label asp-for="GuestName" class="control-label"></label>
+                            <input asp-for="GuestName" class="form-control" />
+                            <span asp-validation-for="GuestName" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Email" class="control-label"></label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="PhoneNumber" class="control-label"></label>
+                            <input asp-for="PhoneNumber" class="form-control" />
+                            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="ShippingAddress" class="control-label"></label>
+                            <textarea asp-for="ShippingAddress" class="form-control"></textarea>
+                            <span asp-validation-for="ShippingAddress" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group mb-3">
+                            <label class="control-label">Products</label>
+                            <div id="orderItems">
+                                <!-- Order items will be added here dynamically -->
+                            </div>
+                            <button type="button" class="btn btn-secondary" id="addItem">
+                                <i class="fas fa-plus"></i> Add Item
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group mt-3">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save"></i> Create Order
+                    </button>
+                    <a asp-action="Index" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Back to List
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        $(document).ready(function () {
+            const form = $('#orderForm');
+            const orderItems = $('#orderItems');
+            const addItemBtn = $('#addItem');
+            let itemCount = 0;
+
+            addItemBtn.click(function () {
+                const itemHtml = `
+                    <div class="order-item mb-3">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <select name="OrderItems[${itemCount}].ProductId" class="form-select product-select" required>
+                                    <option value="">Select Product</option>
+                                    @foreach (var product in ViewBag.Products)
+                                    {
+                                        <option value="@product.Id" data-price="@product.Price">@product.Name - $@product.Price</option>
+                                    }
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <input type="number" name="OrderItems[${itemCount}].Quantity" class="form-control quantity" 
+                                       min="1" value="1" required />
+                            </div>
+                            <div class="col-md-3">
+                                <input type="text" class="form-control total-price" readonly />
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-danger remove-item">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                orderItems.append(itemHtml);
+                itemCount++;
+            });
+
+            $(document).on('click', '.remove-item', function () {
+                $(this).closest('.order-item').remove();
+            });
+
+            $(document).on('change', '.product-select, .quantity', function () {
+                const item = $(this).closest('.order-item');
+                const product = item.find('.product-select option:selected');
+                const quantity = item.find('.quantity').val();
+                const price = product.data('price') || 0;
+                const total = price * quantity;
+                item.find('.total-price').val(total.toFixed(2));
+            });
+
+            form.submit(function (e) {
+                e.preventDefault();
+                
+                const formData = $(this).serialize();
+                
+                $.ajax({
+                    url: $(this).attr('action'),
+                    type: 'POST',
+                    data: formData,
+                    headers: {
+                        'X-Requested-With': 'XMLHttpRequest'
+                    },
+                    beforeSend: function () {
+                        form.find('button[type="submit"]').prop('disabled', true);
+                        form.find('button[type="submit"]').html('<i class="fas fa-spinner fa-spin"></i> Creating...');
+                    },
+                    success: function (response) {
+                        if (response.success) {
+                            window.location.href = '/Orders/Details/' + response.orderId;
+                        } else {
+                            const errors = response.errors.join('<br>');
+                            alert('Error creating order: ' + errors);
+                            form.find('button[type="submit"]').prop('disabled', false);
+                            form.find('button[type="submit"]').html('<i class="fas fa-save"></i> Create Order');
+                        }
+                    },
+                    error: function () {
+                        alert('An error occurred while creating the order. Please try again.');
+                        form.find('button[type="submit"]').prop('disabled', false);
+                        form.find('button[type="submit"]').html('<i class="fas fa-save"></i> Create Order');
+                    }
+                });
+            });
+        });
+    </script>
+}
